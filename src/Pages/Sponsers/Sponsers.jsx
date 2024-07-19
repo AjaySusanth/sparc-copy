@@ -13,7 +13,7 @@ function Sponsers() {
     <section id='sponsers'>
       <div className="content sponser-cont">
       <img src={icon} alt="memories" className='cornericon' />
-        <h1>SPONSERS</h1>
+        <h1>SPONSORS</h1>
         <div className="sp-card">
           <img src={macesblogo} alt="ieee-logo"/>
           <img src={ieeestdlogo} alt="ieee-logo" />
