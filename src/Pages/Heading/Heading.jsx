@@ -7,6 +7,7 @@ const heading = {
     lineHeight: "130px",
     color: "#1E1E1E",
     textTransform: 'uppercase',
+    textAlign: "center",
   };
 
 const Heading = ({ text }) => {
