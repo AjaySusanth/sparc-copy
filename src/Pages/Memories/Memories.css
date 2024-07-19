@@ -1,17 +1,23 @@
 .memories {
-  background-color: #fff8f8;
-  margin: 0 auto; /* Center horizontally */
+  
+  margin: 80px auto; /* Center horizontally */
   height: 1000px;
-  width: 1544px;
+  
 
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  
   border: 8px solid #74758d;
   overflow: hidden;
+  width: 80%;
+    background-color: white;
+    border-radius: 90px;
+    border-style: solid;
+    border-color: #74758D;
+    border-width: 7px;
 }
 .memoryimg {
   width: 1277px;
@@ -57,3 +63,55 @@ button i {
   height: 150px;
   transform: rotate(90deg);
 }
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .memories {
+      width: 90%; /* Adjust to fit smaller screens */
+      height: auto; /* Adjust height to be responsive */
+      padding: 20px;
+    }
+    .memoryimg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .memories {
+      margin: 40px auto; 
+      padding: 10px;
+      border-width: 4px; 
+    }
+    h1 {
+      font-size: 20px;
+      z-index: 3;
+      text-align: center;
+      
+      padding-bottom: 30px;
+     
+    }
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+      display: none;
+    }
+    .cornericon {
+      display: none;
+      top: -30px;
+      left: -30px;
+      width: 120px;
+      height: 100px;
+    }
+  }
