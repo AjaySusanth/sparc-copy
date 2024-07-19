@@ -1,0 +1,43 @@
+
+.sp-card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap:2em;
+}
+
+.sp-card img{
+    width:50%;
+    filter: invert();
+    animation:animate 5s infinite linear;
+}
+
+@keyframes animate{
+    from{
+        transform: translateY(0px) ;
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+
+}
+
+@media (max-width:468px){
+    .sponser{
+        width:60%;
+        padding-bottom:50px;
+    }
+}
+
+@media(min-width:768px){
+    .sp-card{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
+
+    .sp-card img{
+        width:calc(70%/4);
+    }
+}
