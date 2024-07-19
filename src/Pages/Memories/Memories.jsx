@@ -13,7 +13,7 @@ function Memories() {
       <h1> memories</h1>
       
       <img src={memories} alt="memories" className='memoryimg' />
-       <button>  <i class="bi bi-play-circle-fill"> </i>     Know More   </button>
+       <button>  <i class="bi bi-play-circle-fill"> </i>     Know More .   </button>
      </section>
       
 
