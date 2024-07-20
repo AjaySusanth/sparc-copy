@@ -3,13 +3,14 @@ import './Tickets.css'
 import icon from "../../assets/Images/corner icon.png";
 import t1 from "../../assets/Images/blue ticket.png";
 import t2 from "../../assets/Images/white ticket.png";
+import Heading from "../Heading/Heading"
 
 function Tickets() {
   return (
     <section id='ticket' className='sectionstyle'>
       <div className="content">
         <img src={icon} className='rightcornericon'/>
-        <h1>GRAB YOUR TICKETS</h1>
+        <Heading text= "GRAB YOUR TICKETS"/>
         <div className="cards">
           <div className="ticket t1">
             <img src={t1} className='tkt-icon' alt='tkt-icon'></img>
