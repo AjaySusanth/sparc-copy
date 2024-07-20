@@ -1,0 +1,7 @@
+.cornericon {
+    position: absolute;
+    width: 170px; 
+    height: 150px;
+    transform: rotate(180deg);
+  }
+  
