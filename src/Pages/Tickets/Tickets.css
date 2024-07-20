@@ -1,20 +1,4 @@
 
-.content{
-    position:relative;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    margin:30px auto;
-    background-color: white;
-    width:90%;
-    padding:0.5em;
-    border:6px solid rgba(111, 120, 143, 1);
-    min-height:100px;
-    border-radius:100px;
-    box-shadow: 15px 25px 50px 10px black;
-}
-
 .cards{
     display: flex;
     flex-direction: column;
@@ -50,8 +34,7 @@
 
 .reg-btn{
     display:block;
-    padding:10px;
-  
+    padding:15px;
     text-transform:uppercase;
     font-family: 'Nunito Sans';
     font-weight: 600;
@@ -74,14 +57,9 @@
     .rightcornericon{
         display: none;
     }
-
-    .content h1{
-        font-size:2rem;
-        width:75%;
-    }
-
-    .content{
-        padding-bottom: 2px;
+    
+    .tkt-head{
+        width:40%;
     }
     .reg-btn{
         font-size: 15px;
@@ -89,41 +67,25 @@
     
 }
 
-@media (max-width:768px){
-    .content h1{
-        width:75%;
-    }
-    .content{
-        padding-bottom:10px;
-        margin-bottom: 15px;
-    }
-}
 
 @media (min-width:768px){
-    .content{
-        width:80%;
-        display: flex;
-    }
-
     .cards{
         flex-direction: row;
         padding: 1rem;
-        justify-content: space-around;
-        width:70%;
+        justify-content: space-evenly;
     }
 }
 
 @media (min-width:1024px){
-    .content{
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 3em;
-    }
     .ticket{
         width:80%;
     }
     .reg-btn{
         margin-top:10px;
+    }
+
+    .cards{
+        justify-content: space-around;
     }
 }
 

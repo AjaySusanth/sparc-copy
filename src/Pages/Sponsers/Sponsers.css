@@ -9,7 +9,7 @@
 .sp-card img{
     width:50%;
     filter: invert();
-    animation:animate 5s infinite linear;
+    animation:animate 3s infinite linear;
 }
 
 @keyframes animate{
