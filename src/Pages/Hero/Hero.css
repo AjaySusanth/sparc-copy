@@ -1,0 +1,247 @@
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 1100px;
+  }
+  
+  .logo {
+    width: 600px;
+  }
+  
+  .date {
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: regular;
+    font-size: 45px;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .date span {
+    margin-left: 20px;
+  }
+  
+  .register-button {
+    margin-top: 1px;
+    background-color: #5C7BF4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #3558e4;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 50, 0.5);
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 100px;
+    height: 150px;
+  }
+  
+  .time {
+    text-align: center;
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    width: 80px;
+  }
+  
+  .time span {
+    display: block;
+    font-size: 70px;
+    color: #007dd6;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .time p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .scroll-button span{
+    margin-left: 10px;
+  }
+
+  .scroll-button:hover {
+    background-color: #fff;
+    color: #0a0f35;
+  }
+  
+
+  /* Media Queries */
+
+@media (max-width: 1024px) {
+    .hero-container {
+      height: auto; 
+      padding: 0 30px; 
+    }
+  
+    .logo {
+      width: 100%; 
+      max-width: 500px; 
+      margin-top: 150px;
+    }
+  
+    .date {
+      font-size: 36px;
+      line-height: 80px;
+    }
+  
+    .register-button {
+      font-size: 20px;
+      padding: 12px 24px;
+    }
+  
+    .countdown {
+      gap: 15px; 
+      height: 130px;
+    }
+  
+    .time {
+      width: 70px;
+      padding: 15px;
+    }
+  
+    .time span {
+      font-size: 60px;
+    }
+  
+    .time p {
+        font-size: 16px;
+    }
+
+    .scroll-button {
+      bottom: -100px;
+      right: 40px;
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      padding: 0 20px;
+    }
+  
+    .logo {
+      width: 100%; 
+      max-width: 400px; 
+      margin-top: 140px;
+    }
+  
+    .date {
+      font-size: 30px;
+      line-height: 60px;
+    }
+  
+    .register-button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  
+    .countdown {
+      gap: 10px; 
+      height: 110px;
+    }
+  
+    .time {
+      width: 60px;
+      padding: 10px;
+    }
+  
+    .time span {
+      font-size: 50px;
+    }
+
+    .time p {
+        font-size: 14px;
+    }
+  
+    .scroll-button {
+        display: none; 
+      }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .hero-container {
+      padding: 0 15px; 
+    }
+  
+    .logo {
+      width: 100%; 
+      max-width: 300px; 
+      margin-top: 130px;
+    }
+  
+    .date {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  
+    .register-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .countdown {
+      gap: 5px; 
+      height: 100px;
+    }
+  
+    .time {
+      width: 50px;
+      padding: 10px;
+    }
+  
+    .time span {
+      font-size: 40px;
+    }
+
+    .time p {
+        font-size: 12px;
+    }
+  
+    .scroll-button {
+        display: none; 
+      }
+  }
