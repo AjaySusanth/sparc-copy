@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Cornericon.css';
+import './LCornericon.css';
 import icon from '../../assets/Images/corner icon.png'; 
 
 
