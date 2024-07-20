@@ -3,13 +3,13 @@ import './Memories.css';
 import memories from "../../assets/Images/memories.png";
 import icon from "../../assets/Images/corner icon.png";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import WhiteBg from '../WhiteBg/WhiteBg';
+import Cornericon from "../Cornericon/Cornericon";
 function Memories() {
   return (
     <>
     
      <section className='memories'>
-     <img src={icon} alt="memories" className='cornericon' />
+     <Cornericon  />
       
       <h1> memories</h1>
       

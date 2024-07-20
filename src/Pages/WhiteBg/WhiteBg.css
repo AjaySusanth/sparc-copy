@@ -5,4 +5,10 @@
     border-style: solid;
     border-color: #74758D;
     border-width: 7px;
+    overflow: hidden;
+    margin-left:  auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 40px;
+    
 }
