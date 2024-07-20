@@ -4,4 +4,25 @@
     height: 150px;
     transform: rotate(180deg);
   }
-  
+    /* Media Queries for different screen sizes */
+
+@media (max-width: 1024px) {
+  .cornericon {
+    width: 150px;  
+    height: auto;  
+  }
+}
+
+@media (max-width: 768px) {
+  .cornericon {
+    width: 140px;  
+    height: auto;  
+  }
+}
+
+@media (max-width: 480px) {
+  .cornericon {
+    width: 130px; 
+    height: auto;  
+  }
+}
