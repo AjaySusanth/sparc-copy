@@ -5,7 +5,7 @@ import ieeestdlogo from "../../assets/Images/ieee students.png";
 import ieeereglogo from "../../assets/Images/ieee region 10.png";
 import ieeelogo from "../../assets/Images/ieee logo white.png";
 import Heading from '../Heading/Heading';
-import CornerIcon from "../RCornericon/RCornericon";
+import CornerIcon from '../LCornericon/LCornericon'
 import WhiteBg from '../WhiteBg/WhiteBg';
 
 
