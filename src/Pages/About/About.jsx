@@ -7,6 +7,7 @@ import Cornericon from "../LCornericon/LCornericon";
 function About() {
   return (
     <div>
+      <section id="about">
       <div className="about">
         <WhiteBg height="auto">
           <Cornericon />
@@ -24,6 +25,7 @@ function About() {
           </p>
         </WhiteBg>
       </div>
+      </section>
     </div>
   );
 }
