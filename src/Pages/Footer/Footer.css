@@ -1,7 +1,7 @@
 .Main {
     text-align: center;
     margin-top: 40px;
-    background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
+    background: radial-gradient(circle at center, rgb(1, 48, 108) 15%, rgb(2, 1, 80) 200%);
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
