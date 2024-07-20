@@ -3,21 +3,25 @@ import "./Memories.css";
 import memories from "../../assets/Images/memories.png";
 import icon from "../../assets/Images/corner icon.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import WhiteBg from "../WhiteBg/WhiteBg";
 import Cornericon from "../LCornericon/LCornericon";
+import Heading from "../Heading/Heading";
 function Memories() {
   return (
     <>
-      <section className="memories">
+      
+      
+      <WhiteBg height="auto"><div className="memories">
         <Cornericon />
-
-        <h1> memories</h1>
+       
+       <Heading text=" MEMORIES" />
 
         <img src={memories} alt="memories" className="memoryimg" />
         <button>
-          {" "}
+          
           <i class="bi bi-play-circle-fill"> </i> Know More{" "}
-        </button>
-      </section>
+        </button></div></WhiteBg>
+      
     </>
   );
 }
