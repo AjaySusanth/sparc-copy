@@ -8,6 +8,7 @@
 }
 
 .ticket{
+    margin-top:5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,22 +58,36 @@
     .rightcornericon{
         display: none;
     }
+
+    .ticket{
+        scale:0.8;
+    }
     
     .tkt-head{
         width:40%;
     }
+
     .reg-btn{
         font-size: 15px;
     }
     
 }
 
+@media (max-width:768px){
+    .cards{
+        padding-bottom: 5px;
+    }
+}
 
 @media (min-width:768px){
     .cards{
         flex-direction: row;
         padding: 1rem;
         justify-content: space-evenly;
+    }
+
+    .reg-btn{
+        font-size:15px;
     }
 }
 
