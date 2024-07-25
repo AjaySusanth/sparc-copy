@@ -65,19 +65,30 @@
   .scroll-to-top {
     position: absolute;
     right: 50px;
-    bottom: 50px; 
-    background-color: white ;
+    bottom: 43px; 
+    background-color: rgb(255, 252, 252) ;
     
     color: black;
     border: none;
-    border-radius: 70px;
+   ;
     cursor: pointer;
-    font-size: 24px;
-    padding-left: 2cqh ; 
-    padding-right: 0cqh;
-    display: flex;
+   
+   
     align-items: center;
     justify-content: center;
+
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    border-radius: 90px;
+  
+    font-size: 25px;
+    padding-left: 1.5cqh ; 
+    padding-right: 0cqh;
+    display: flex;
+    padding-top: 1px;
+    padding-bottom: 2px;
   }
   
   .scroll-to-top:hover {
@@ -90,37 +101,72 @@
     color: black; 
     
   }
-  @media (max-width: 480px) {
-    
-  
-.follow {
-      font-size: 18px;
-    }
-  .connect{
-    font-size:15px;
-  }
-  .scroll-to-top {
-    position: absolute;
-    right: 20px;
-    bottom: 95px; 
-    
-    
-    
-    border-radius: 90px;
-  
-    font-size: 20px;
-    padding-left: 1cqh ; 
-    padding-right: 0cqh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .size-6 {
-    width: 20px; 
-    height: 10px;
-    color: rgb(0, 0, 0); 
-    
-  }
-    
-  }
 
+  @media (max-width: 768px) {
+    
+  
+    .follow {
+          font-size: 18px;
+        }
+      .connect{
+        font-size:18px;
+      }
+      .scroll-to-top {
+        position: absolute;
+        right: 20px;
+        bottom: 80px; 
+        
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        border-radius: 90px;
+      
+        font-size: 25px;
+        padding-left: 1cqh ; 
+        padding-right: 0cqh;
+        display: flex;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        align-items: center;
+        justify-content: center;
+      }
+      .size-6 {
+        width: 20px; 
+        height: 10px;
+        color: rgb(0, 0, 0); 
+        
+      }
+        
+      }
+
+      @media (max-width: 480px) {
+    
+  
+        .follow {
+              font-size: 18px;
+            }
+          .connect{
+            font-size:18px;
+          }
+          .scroll-to-top {
+            position: absolute;
+            right: 20px;
+            bottom: 99px; 
+            border-radius: 90px;
+          
+            font-size: 20px;
+            padding-left: 1cqh ; 
+            padding-right: 0cqh;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .size-6 {
+            width: 20px; 
+            height: 10px;
+            color: rgb(0, 0, 0); 
+            
+          }
+            
+        }
