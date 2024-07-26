@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Hero.css';
 import sparcLogo from '../../assets/Images/sparc logo.png';
 import { IoIosArrowDown } from "react-icons/io";
+import './Hero.css';
 
 function Hero() {
   const calculateTimeLeft = () => {

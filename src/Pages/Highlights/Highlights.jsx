@@ -18,7 +18,7 @@ function AnimatedNumber({ value, inView }) {
 
 function Highlights() {
   const [ref, inView] = useInView({
-    triggerOnce: false, 
+    triggerOnce: true, 
     threshold: 0.5, 
   });
 
