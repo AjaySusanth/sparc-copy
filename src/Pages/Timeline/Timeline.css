@@ -1,9 +1,31 @@
-.timeline-date{
-    font-family: 'Zen Dots', sans-serif;
-    font-weight: regular;
-    font-size: 30px;
-    line-height: 100px;
-    color: #1E1E1E;
-    text-align: center;
-    text-transform: none;
+.timeline-date {
+  font-family: 'Zen Dots', sans-serif;
+  font-weight: regular;
+  font-size: 30px;
+  line-height: 100px;
+  color: #1E1E1E;
+  text-align: center;
+  text-transform: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .timeline-date {
+    font-size: 25px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-date {
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-date {
+    font-size: 18px;
+    line-height: 50px;
+  }
 }
