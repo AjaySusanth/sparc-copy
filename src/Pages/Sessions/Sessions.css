@@ -1,0 +1,18 @@
+.heading {
+    margin-top: 4rem;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 640px) {
+  
+    .heading {
+      margin-top: 0;
+    }
+  }
+
