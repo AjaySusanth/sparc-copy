@@ -12,3 +12,10 @@
     box-shadow: 35px 35px 50px 10px rgba(0, 0, 0, 0.4);
     margin-top: 200px;
 }
+
+@media (max-width:480px) {
+    .white-bg{
+        border-radius: 60px;
+        width: 85%;
+    }
+}
