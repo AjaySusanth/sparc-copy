@@ -34,7 +34,9 @@ button i {
   margin-right: 12px;
 }
 
-
+.memoryimgsmall{
+  display: none;
+}
 
 @media (max-width: 1024px){
   .memories {
@@ -45,10 +47,10 @@ button i {
   .memoryimg {
     width: 100%; 
     height: auto; 
-    margin-top: 10px; 
+   margin-top: 10px; 
     margin-bottom: 10px; 
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   button {
@@ -85,19 +87,25 @@ button i {
     margin: 20px; 
     padding: 10px; 
     height: auto;
+    margin-top: -24px;
   }
 
   .memoryimg {
-    width: 100%; 
+    display: none;
+    /*width: 100%; 
     height: auto; 
     margin-top: -30px; 
-    margin-bottom: 5px; 
+    margin-bottom: 5px; */
+  }
+  .memoryimgsmall{
+    display: block;
+    width: 100%;
   }
 
   button {
-    font-size: 8px; 
+    font-size: 10px; 
     display: flex;
-    margin-top: 1px;
+    margin-top: 11px;
     margin-bottom: -10px; 
   }
 }
