@@ -5,6 +5,7 @@ import WhiteBg from '../WhiteBg/WhiteBg';
 import Rcornericon from '../RCornericon/RCornericon'
 function Sessions() {
   return (
+    <section id="sessions">
     <WhiteBg>
       <Rcornericon/>
       <Heading text="Sessions" className="heading" />
@@ -12,6 +13,7 @@ function Sessions() {
         <Card />
       </div>
     </WhiteBg>
+  </section>
   );
 }
 
