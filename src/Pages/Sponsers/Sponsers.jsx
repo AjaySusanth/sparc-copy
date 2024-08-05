@@ -12,10 +12,10 @@ import WhiteBg from '../WhiteBg/WhiteBg';
 
 function Sponsers() {
   return (
-    <section id='sponsers'>
+    <section id='sponsors' className='sectionstyle'>
       <WhiteBg>
         <CornerIcon/>
-        <Heading text= "SPONSORS" />
+        <Heading className='sp-head' text= "SPONSORS" />
         <div className="sp-card">
           <img src={macesblogo} alt="ieee-logo"/>
           <img src={ieeestdlogo} alt="ieee-logo" />

@@ -1,4 +1,8 @@
-
+.sectionstyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cards{
     display: flex;
     flex-direction: column;
@@ -49,6 +53,7 @@
     transform:translateY(5px);
     .reg-btn{
         cursor: pointer;
+        scale:0.9;
         transition:background-color 0.2s ease-in;
         background-color: #2644b9;
     }  
@@ -75,7 +80,7 @@
 
 @media (max-width:768px){
     .cards{
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
 }
 
@@ -94,6 +99,7 @@
 @media (min-width:1024px){
     .ticket{
         width:80%;
+        scale:1.1;
     }
     .reg-btn{
         margin-top:10px;
@@ -101,6 +107,12 @@
 
     .cards{
         justify-content: space-around;
+    }
+
+    .ticket:hover,.ticket:active{
+        scale:1.2;
+        transition: scale 0.5s ease-in-out,transform 0.5s ease-in;
+        transform:translateY(7px);
     }
 }
 

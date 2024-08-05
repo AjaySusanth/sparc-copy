@@ -47,7 +47,7 @@ function Hero() {
   };  
 
   return (
-    <div className='hero-container'>
+    <section className='hero-container'>
       <img src={sparcLogo} alt="SPARC" className='logo' />
       <h1 className='date'>
         S E P <span>2 8 | 2 9</span>
@@ -72,7 +72,7 @@ function Hero() {
         </div>
       </div>
       <button className='scroll-button' onClick={handleScrollToAboutSection} >SCROLL TO EXPLORE <span><IoIosArrowDown /></span>  </button>
-    </div>
+    </section>
   );
 }
 
