@@ -225,7 +225,9 @@
   
     .countdown {
       gap: 5px; 
-      height: 100px;
+      height: 90px;
+      border-radius: 30px;
+      padding: 10px;
     }
   
     .time {
@@ -239,6 +241,54 @@
 
     .time p {
         font-size: 12px;
+    }
+  
+    .scroll-button {
+        display: none; 
+      }
+  }
+
+  @media (max-width: 340px) {
+    .hero-container {
+      padding: 0 15px; 
+    }
+  
+    .logo {
+      width: 100%; 
+      max-width: 300px; 
+      margin-top: 130px;
+    }
+  
+    .date {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  
+    .register-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .countdown {
+      gap: 3px; 
+      height: 80px;
+      border-radius: 20px;
+      padding: 8px;
+      width: 220px;
+    }
+  
+    .time {
+      width: 40px;
+      padding: 8px;
+      border-radius: 15px;
+    }
+  
+    .time span {
+      font-size: 30px;
+    }
+
+    .time p {
+        font-size: 10px;
     }
   
     .scroll-button {
