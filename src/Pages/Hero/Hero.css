@@ -5,11 +5,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 1100px;
+    height: 900px;
   }
   
   .logo {
     width: 600px;
+    margin-top: 300px;
   }
   
   .date {
@@ -83,7 +84,7 @@
   
   .scroll-button {
     position: absolute;
-    bottom: 30px;
+    bottom: -200px;
     right: 100px;
     background-color: transparent;
     color: #fff;
@@ -117,7 +118,7 @@
     .logo {
       width: 100%; 
       max-width: 500px; 
-      margin-top: 150px;
+      margin-top: 200px;
     }
   
     .date {
@@ -165,7 +166,7 @@
     .logo {
       width: 100%; 
       max-width: 400px; 
-      margin-top: 140px;
+      margin-top: 180px;
     }
   
     .date {
@@ -205,12 +206,13 @@
   @media (max-width: 480px) {
     .hero-container {
       padding: 0 15px; 
+      height: 700px;
     }
   
     .logo {
       width: 100%; 
       max-width: 300px; 
-      margin-top: 130px;
+      margin-top: 200px;
     }
   
     .date {
@@ -251,12 +253,13 @@
   @media (max-width: 340px) {
     .hero-container {
       padding: 0 15px; 
+      height: 600px;
     }
   
     .logo {
       width: 100%; 
       max-width: 300px; 
-      margin-top: 130px;
+      margin-top: 200px;
     }
   
     .date {
