@@ -3,13 +3,13 @@
 }
 
 nav {
-  background-color: rgba(23, 37, 103, 1);
+  background-color: #07194B;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
   width: 100%;
-  background-color: rgba(23, 36, 103, 0.378);
+  background-color: rgba(23, 36, 103, 0.5);
   padding: 15px 15px;
   top: 0;
   position: fixed;
@@ -28,11 +28,11 @@ nav ul {
 }
 
 nav li {
-  height: 50px;
+  height: 35px;
 }
 
 nav img {
-  height: 70%;
+  height: 100%;
 }
 
 nav a {
