@@ -1,11 +1,11 @@
 import './Card.css';
 import { HiChevronRight } from "react-icons/hi";
-import Rcornericon from '../RCornericon/RCornericon'
+import icon from '../../assets/Images/right corner icon.png'
 
 const Card = () => {
   return (
     <div className="card-container">
-        <Rcornericon/>
+        <img src={icon} className='icon'/>
       <div className="card-content">
         <h2 className="card-title">Sample text</h2>
         <h2 className="card-subtitle">Session Name</h2>
