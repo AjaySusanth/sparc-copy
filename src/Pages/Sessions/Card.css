@@ -9,9 +9,16 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    box-shadow: 50px 50px 75px 0px rgba(29,12,7,0.32);
-
+    margin:0 10px;
+    box-shadow: 88px 51px 51px -29px rgba(29,12,7,0.32);
   }
+
+.icon{
+  position:absolute;
+  right:0;
+  top:0;
+  width:80px;
+}
 
   .card-content {
     margin-top: 2.5rem;
@@ -38,7 +45,6 @@
     position: relative;
     margin-bottom: 15px;
   }
-
   .card-footer::before {
     content: "";
     position: absolute;
@@ -83,6 +89,9 @@
       padding: 32px 64px;
       border-radius: 90px;
       height: 350px;
+    }
+    .icon{
+      width: 100px;
     }
 
     .card-title{
