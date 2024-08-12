@@ -64,6 +64,7 @@ function Navbar() {
         <li><a href='#sessions' className={activeSection === 'sessions' ? 'active' : ''} onClick={() => handleLinkClick('sessions')}>Sessions</a></li>
         <li><a href='#sponsors' className={activeSection === 'sponsors' ? 'active' : ''} onClick={() => handleLinkClick('sponsors')}>Sponsors</a></li>
       </ul>
+      
       <ul className='navbar'>
         <li><a href="#"><img src={macelogo} alt='logo' /></a></li>
         <div className="seprow">

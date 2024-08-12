@@ -93,7 +93,7 @@
         padding-bottom: 15px;
     }
     .ticket:hover,.ticket:active{
-        scale:1.05;
+        scale:0.9;
     }
 }
 

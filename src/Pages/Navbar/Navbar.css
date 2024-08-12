@@ -10,12 +10,12 @@ nav {
 .navbar {
   width: 100%;
   background-color: rgba(23, 36, 103, 0.5);
-  padding: 15px 15px;
+  padding: 25px 10px;
   top: 0;
   position: fixed;
   z-index: 997;
   display: flex;
-  gap: 20%;
+  gap: 10%;
   justify-content: space-evenly;
 }
 
@@ -69,6 +69,7 @@ nav a.active::after{
   align-items: center;
   gap:2em;
   text-align: center;
+  
   transition: transform 0.3s ease-in-out;
 }
 
@@ -102,6 +103,11 @@ nav a.active::after{
   .menu-btn {
     display: block;
   }
+
+  .navbar{
+    padding:15px 0px;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 769px) {
@@ -112,6 +118,8 @@ nav a.active::after{
     padding: 10px;
     transition: all 0.5s ease-in-out;
   }
+
+
 
   .sidebar {
     display: none;
