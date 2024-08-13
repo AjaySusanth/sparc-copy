@@ -3,7 +3,7 @@
 }
 
 nav {
-  background-color: #07194B;
+  background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,13 +41,14 @@ nav a {
   display: flex;
   padding: 0px 16px;
   align-items: center;
-  color: white;
+  color: black;
   font-family: 'Nunito-Sans', sans-serif;
   text-transform: uppercase;
 }
 
 nav a.active::after{
   background-color: rgba(92, 123, 244, 1);
+  color: white;
 }
 
 .menu-btn {
@@ -61,7 +62,7 @@ nav a.active::after{
   padding: 40px;
   height: 100vh;
   z-index: 999;
-  background-color: rgba(23, 36, 103, 0.595);
+  background-color: rgba(40, 59, 153, 0.595);
   backdrop-filter: blur(50px);
   box-shadow: -10px 5px 100vw rgba(0, 0, 0, 0.577);
   display: none;
@@ -80,15 +81,18 @@ nav a.active::after{
 .sidebar li {
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 .sidebar li a {
   width: fit-content;
   text-align: center;
+  color:white;
 }
 
 .sidebar a:hover, .sidebar a:active {
   background-color: rgba(92, 123, 244, 1);
+  color:white;
   border-radius: 500px;
   transition: all 0.3s ease-in;
 }
@@ -112,14 +116,13 @@ nav a.active::after{
 
 @media (min-width: 769px) {
   .seprow {
-    background-color: rgba(23, 37, 103, 1);
+    background-color: whitesmoke;
+    color:white;
     display: flex;
     border-radius: 500px;
     padding: 10px;
     transition: all 0.5s ease-in-out;
   }
-
-
 
   .sidebar {
     display: none;
@@ -129,6 +132,7 @@ nav a.active::after{
   .seprow a:active {
     background-color: rgba(92, 123, 244, 1);
     border-radius: 500px;
+    color: white;
     transition: all 0.3s ease-in-out;
   }
 }
