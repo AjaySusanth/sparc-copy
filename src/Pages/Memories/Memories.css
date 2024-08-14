@@ -28,6 +28,7 @@ button {
   justify-content: center;
   margin-top: -10px;
   margin-bottom: 40px;
+  padding: 10px ;
 }
 
 button i {
