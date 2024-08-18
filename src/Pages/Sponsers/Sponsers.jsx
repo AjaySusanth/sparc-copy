@@ -12,7 +12,7 @@ import WhiteBg from '../WhiteBg/WhiteBg';
 
 function Sponsers() {
   return (
-    <section id='sponsors' className='sectionstyle'>
+    <section id='sponsors' className='sectionstyle section'>
       <WhiteBg>
         <CornerIcon/>
         <Heading className='sp-head' text= "SPONSORS" />

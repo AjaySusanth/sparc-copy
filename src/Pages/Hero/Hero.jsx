@@ -47,7 +47,7 @@ function Hero() {
   };  
 
   return (
-    <section className='hero-container'>
+    <section className='hero-container section' id='home'>
       <img src={sparcLogo} alt="SPARC" className='logo' />
       <h1 className='date'>
         S E P <span>2 8 | 2 9</span>

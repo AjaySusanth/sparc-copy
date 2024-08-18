@@ -8,7 +8,7 @@ import OppositeContentTimeline2 from './Day2'
 
 function Timeline() {
   return (
-    <section id='timeline'>
+    <section id='timeline' className='section'>
       <WhiteBg height="auto">
         <CornerIcon />
         <Heading text="Timeline" />
