@@ -37,9 +37,7 @@
     font-style: normal;
     font-weight: 800;
 }
-.t3 *{
-    font-size:1.1rem;
-}
+
 
 .reg-btn{
     display:block;
@@ -101,7 +99,7 @@
     }
 }
 
-@media (min-width:768px){
+@media (min-width:769px){
     .cards{
         flex-direction: row;
         padding: 1rem;
@@ -112,16 +110,17 @@
         font-size:15px;
     }
 
+    .ticket{
+        font-size:0.8em;
+    }
+
     .ticket:hover,.ticket:active{
         scale:1.1;
     }
+
 }
 
 @media (min-width:1024px){
-    .ticket{
-        width:80%;
-        scale:1.1;
-    }
     .reg-btn{
         margin-top:10px;
     }

@@ -10,7 +10,7 @@ import {Autoplay} from 'swiper/modules';
 import 'swiper/css/autoplay'
 function Sessions() {
   return (
-    <section id="sessions">
+    <section className='section' id="sessions">
     <WhiteBg>
       <Rcornericon/>
       <Heading text="Sessions" className="heading" />
