@@ -23,10 +23,10 @@ function Memories() {
         <img src={memoriessmall2} alt="memoriessmall" className="memoryimgsmall" />
         <img src={memoriessmall3} alt="memoriessmall" className="memoryimgsmall" />
 
-        <button onClick={() => window.location.href = 'https://sparc.ieeemace.org/'}>
-          
-          <i class="bi bi-play-circle-fill"> </i> Know More{" "}
-        </button></div></WhiteBg>
+        <button onClick={() => window.open('https://sparc.ieeemace.org/', '_blank')}>
+          <i className="bi bi-play-circle-fill"></i> Know More
+        </button>
+        </div></WhiteBg>
       
     </>
   );

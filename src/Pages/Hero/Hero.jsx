@@ -5,7 +5,7 @@ import './Hero.css';
 
 function Hero() {
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-09-28T08:00:00');
+    const eventDate = new Date('2024-10-19T08:00:00');
     const now = new Date();
     const difference = eventDate - now;
 
@@ -50,7 +50,7 @@ function Hero() {
     <section className='hero-container section' id='home'>
       <img src={sparcLogo} alt="SPARC" className='logo' />
       <h1 className='date'>
-        S E P <span>2 8 | 2 9</span>
+        O C T <span>1 9 | 2 0</span>
       </h1>
       <button className='register-button' onClick={handleScrollToTicketSection} >REGISTER NOW ↗ </button>
       <div className='countdown'>

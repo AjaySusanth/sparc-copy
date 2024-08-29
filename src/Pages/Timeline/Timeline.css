@@ -1,3 +1,5 @@
+/* Timeline.css */
+
 .timeline-date {
   font-family: 'Zen Dots', sans-serif;
   font-weight: regular;
@@ -6,6 +8,42 @@
   color: #1E1E1E;
   text-align: center;
   text-transform: none;
+}
+
+.carousel .slide {
+  background: none; /* Remove background */
+}
+
+.carousel .control-dots .dot {
+  background-color: #5C7BF4; /* Customize dot color */
+}
+
+/* Custom Arrow Styles */
+.custom-arrow {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  border-radius: 50%; /* Make the arrow buttons circular */
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  color: white; /* Arrow color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000; /* Ensure they are on top of other elements */
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Adjust for centering */
+  cursor: pointer; /* Change the cursor to a pointer */
+  border: none; /* Remove the default border */
+  font-size: 30px; /* Increase arrow size */
+  text-align: center;
+}
+
+.custom-arrow-prev {
+  left: 30px; /* Position left arrow */
+}
+
+.custom-arrow-next {
+  right: 30px; /* Position right arrow */
 }
 
 /* Responsive styles */
@@ -21,11 +59,19 @@
     font-size: 20px;
     line-height: 60px;
   }
+
+  .custom-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
   .timeline-date {
     font-size: 18px;
     line-height: 50px;
+
+    .custom-arrow {
+      display: none;
+    }
   }
 }
