@@ -54,6 +54,22 @@ function Navbar() {
     setSidebarOpen(false);
   };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const navbarStyle = {
+    backgroundColor: scrolled ? '#17246780' : 'transparent',
+    transition: 'background-color 0.3s ease',
+    position: 'fixed',
+    top: 0,
+    width: '100%'
+  };
+
   return (
     <nav>
       <ul className={`sidebar ${sidebarOpen ? 'open' : ''}`} ref={sidebarRef}>
@@ -67,10 +83,12 @@ function Navbar() {
           <li><a href='#timeline'>timeline</a></li>
           <li><a  href='#sessions'>Sessions</a></li>
           <li><a href='#sponsors'>Sponsors</a></li>
+          <button className='Sign-Up-btn'>Sign Up</button>
       </ul>
       
-      <ul className='navbar'>
-        <li><a href="#"><img src={macelogo} alt='logo' /></a></li>
+      
+      <ul className='navbar' style={navbarStyle}>
+        <li><a href="#" id="logo"><img src={macelogo} alt='logo' /></a></li>
         <div className="seprow">
         <ul>
           <li>
@@ -120,7 +138,7 @@ function Navbar() {
           </li>
         </ul>
         </div>
-        
+        <button className='Sign-Up-btn hideOnMobile'>Sign Up</button>
         <li className='menu-btn hideOnMobile' onClick={() => setSidebarOpen(true)}>
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
