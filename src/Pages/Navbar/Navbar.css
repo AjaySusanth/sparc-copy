@@ -7,16 +7,21 @@ nav {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+#logo:hover,#logo:active,#logo::after{
+    background-color:transparent;
+    box-shadow: -1px -10px 150px white;
+    transition: all 0.3s ease-in-out;
+  }
+
 .navbar {
   width: 100%;
-  background-color: rgba(23, 36, 103, 0.5);
-  padding: 25px 5px;
+  background-color: #17246780;
+  padding: 25px 25px;
   top: 0;
   position: fixed;
   z-index: 997;
   display: flex;
-  gap: 10%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav ul {
@@ -51,7 +56,10 @@ nav a.active::after{
   background-color: rgba(92, 123, 244, 1);
   color: white;
 }
-
+.navbar img:hover,:active{
+  background-color:transparent;
+  text-shadow: 0px 0px 10px white;
+}
 .menu-btn {
   display: none;
 }
@@ -60,7 +68,8 @@ nav a.active::after{
   position: fixed;
   top: 0;
   right: 0;
-  padding: 40px;
+  padding:40px;
+  padding-top:30px;
   height: 100vh;
   z-index: 999;
   background-color: rgba(6, 13, 48, 0.504);
@@ -70,24 +79,22 @@ nav a.active::after{
   flex-direction: column;
   align-items: center;
   gap:2em;
-  text-align: center;
-  
+  text-align: right;
   transition: transform 0.3s ease-in-out;
 }
 
 .sidebar.open {
   display: flex;
+  transition: all 0.3s ease-in;
 }
 
 .sidebar li {
   width: 100%;
-  text-align: center;
   cursor: pointer;
 }
 
 .sidebar li a {
   width: fit-content;
-  text-align: center;
   color:white;
 }
 
@@ -96,7 +103,20 @@ nav a.active::after{
   color:white;
   border-radius: 500px;
   transition: all 0.3s ease-in;
-  
+  font-weight:600;
+}
+
+.Sign-Up-btn{
+  background-color: white;
+  color:rgba(92, 123, 244, 1);
+  font-weight:700;
+}
+
+.Sign-Up-btn:hover,.Sign-Up-btn:active,.Sign-Up-btn::after{
+  background-color: rgba(92, 123, 244, 1);
+  color:white;
+  border-radius: 500px;
+  transition: all 0.3s ease-in;
   font-weight:600;
 }
 
@@ -112,14 +132,26 @@ nav a.active::after{
   .seprow {
     display: none;
   }
+
   .menu-btn {
     display: block;
   }
 
+  .hide-btn{
+    text-align: right;
+  }
+
+  .Sign-Up-btn{
+    scale:1.2;
+  }
+
+  #logo{
+    padding:0;
+  }
   .navbar{
-    padding-left:5px;
-    padding-right:-0;
-    justify-content: space-between;
+    margin:0;
+    gap:25%;
+    justify-content: space-around;
   }
 }
 
@@ -145,6 +177,43 @@ nav a.active::after{
     transition: all 0.3s ease-in-out;
     font-weight:600;
   }
+  .Sign-Up-btn{
+    scale:0.9;
+    margin:10px;
+  }
+}
+
+@media (min-width:769px) and (max-width:1039px){
+  .navbar{
+    padding:10px 1px;
+    margin:0;
+    justify-content: center;
+
+ }
+ .navbar *{
+  scale:0.98;
+ }
+ .nav a{
+  padding:0px 16px;
+ }
+
+ .Sign-Up-btn{
+  scale:0.8;
+ }
+}
+
+@media (min-width:1040px){
+  .navbar{
+    scale:1.1;
+  }
+
+  .Sign-Up-btn{
+    scale:1.2;
+  }
+
+  #logo{
+    scale:1.2;
+  }
 }
 
 section .section{
@@ -159,3 +228,4 @@ section .section{
   transition: all 0.3s ease-in-out;
   font-weight:600;
 }
+

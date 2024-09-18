@@ -7,8 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap:3%;
+    justify-content: space-evenly;
     margin-bottom: 30px;
 }
 
@@ -31,7 +30,7 @@
 }
 
 .ticket h2{
-    margin:5px;
+    margin-bottom:5px;
     color:black;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -45,7 +44,7 @@
     text-transform:uppercase;
     font-family: 'Nunito Sans';
     font-weight: 600;
-    min-width:80px;
+    min-width:40px;
     background-color: rgba(92, 123, 244, 1);
 }
 
@@ -102,8 +101,7 @@
 @media (min-width:769px){
     .cards{
         flex-direction: row;
-        padding: 1rem;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
     }
 
     .reg-btn{
@@ -120,13 +118,15 @@
 
 }
 
-@media (min-width:1024px){
+@media (min-width:1023px){
     .reg-btn{
-        margin-top:10px;
+        margin-top:15px;
+        margin-bottom:5px;
     }
 
     .cards{
-        justify-content: space-around;
+        justify-content: space-evenly;
+        gap:0;
     }
 
     .ticket:hover,.ticket:active{
@@ -134,5 +134,36 @@
         transition: scale 0.5s ease-in-out,transform 0.5s ease-in;
         transform:translateY(7px);
     }
+   
 }
 
+@media (min-width:1023px) and (max-width:1220px){
+    .t3{
+        width:25%;
+        padding:0;
+    }
+
+    .t3 h2{
+        font-size:1.2rem;
+    }
+
+    .t3 .reg-btn{
+        margin-top:1.2px;
+    }
+    
+}
+@media(min-width:1440px){
+    .cards{
+        padding:2rem;
+    }
+
+    .ticket{
+        scale:1.2;
+    }
+
+    .ticket:hover,.ticket:active{
+        scale:1.5;
+        transition: scale 0.5s ease-in-out,transform 0.5s ease-in;
+        transform:translateY(7px);
+    }
+}
