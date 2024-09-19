@@ -37,7 +37,7 @@ const LoginModal = ({ closeModal }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Login</button>
-          <p>Already have an account <a href="#">Sign Up</a></p>
+          <p>Already have an account? <a href="#">Sign Up</a></p>
         </form>
       </div></div>
     </div>
