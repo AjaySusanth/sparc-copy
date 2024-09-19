@@ -66,44 +66,44 @@
 /* For screens ≤ 1024px */
 @media (max-width: 1024px) {
     .highlights-content {
-        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
-        grid-gap: 20px; /* Add some gap between items */
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; 
     }
 
     .highlight-image {
-        position: static; /* Remove absolute positioning */
+        position: static; 
         margin-top: 20px;
         text-align: center;
-        margin-bottom: 20px; /* Adjust bottom margin */
-        float: inherit; /* Image is on center */
+        margin-bottom: 20px;
+        float: inherit; 
     }
 
     .highlight-image img {
-        max-width: 120px; /* Adjust image size */
+        max-width: 120px; 
     }
 }
 
 /* For screens ≤ 768px */
 @media (max-width: 768px) {
     .highlights-content {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     .highlight-image {
-        position: static; /* Remove absolute positioning on smaller screens */
+        position: static; 
         margin-top: 20px;
         text-align: center;
-        float: none; /* Remove floating */
+        float: none; 
     }
 
     .highlight-image img {
-        max-width: 100px; /* Adjust image size */
+        max-width: 100px; 
     }
 }
 
 @media (max-width: 480px) {
     .highlights-text {
-        font-size: 18px; /* Smaller font size on very small screens */
+        font-size: 18px; 
         line-height: 24px;
         margin-left: 10px;
         margin-right: 10px;
@@ -111,12 +111,12 @@
     }
 
     .item-no {
-        font-size: 35px; /* Adjust number size on very small screens */
+        font-size: 35px; 
         line-height: 70px;
     }
 
     .item-name {
-        font-size: 20px; /* Adjust item name size on very small screens */
+        font-size: 20px; 
         line-height: 30px;
     }
 }

@@ -22,7 +22,6 @@ function App() {
         <Tickets/>
         <Highlights/>
         <Memories/>
-        <Timeline/>
         <Sessions/>
         <Sponsers/>
         <Footer/>
