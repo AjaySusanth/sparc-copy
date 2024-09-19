@@ -88,7 +88,7 @@ function Navbar() {
       
       
       <ul className='navbar' style={navbarStyle}>
-        <li><a href="#" id="logo"><img src={macelogo} alt='logo' /></a></li>
+        <li><a href="../../" id="logo"><img src={macelogo} alt='logo' /></a></li>
         <div className="seprow">
         <ul>
           <li>
@@ -138,6 +138,7 @@ function Navbar() {
           </li>
         </ul>
         </div>
+        
         <button className='Sign-Up-btn hideOnMobile'>Sign Up</button>
         <li className='menu-btn hideOnMobile' onClick={() => setSidebarOpen(true)}>
           <a>
