@@ -10,7 +10,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
+      const sections = document.querySelectorAll('section');
       let currentTab = '';
 
       sections.forEach(section => {
@@ -27,7 +27,7 @@ function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call initially to set the active tab on page load
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -80,7 +80,7 @@ function Navbar() {
         </li>
         <li><a href='#'>Home</a></li>
           <li><a  href='#about'>ABOUT</a></li>
-          <li><a href='#timeline'>timeline</a></li>
+          <li><a href='#tickets'>tickets</a></li>
           <li><a  href='#sessions'>Sessions</a></li>
           <li><a href='#sponsors'>Sponsors</a></li>
           <button className='Sign-Up-btn'>Sign Up</button>
@@ -111,11 +111,11 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="#timeline"
-              className={activeTab === 'timeline' ? 'active' : ''}
-              onClick={() => handleTabClick('timeline')}
+              href="#tickets"
+              className={activeTab === 'tickets' ? 'active' : ''}
+              onClick={() => handleTabClick('tickets')}
             >
-              Timeline
+              tickets
             </a>
           </li>
           <li>
