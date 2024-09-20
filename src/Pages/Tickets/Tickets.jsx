@@ -9,7 +9,7 @@ import WhiteBg from '../WhiteBg/WhiteBg';
 
 function Tickets() {
   return (
-    <section id='ticket' className='sectionstyle'>
+    <section id='tickets' className='sectionstyle'>
       <WhiteBg height="auto" className="cont">
         <CornerIcon/>
         <Heading className='tkt-head' text= "GRAB YOUR TICKETS"/>
