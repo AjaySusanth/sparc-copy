@@ -37,7 +37,6 @@
     font-weight: 800;
 }
 
-
 .reg-btn{
     display:block;
     padding:15px;
@@ -65,7 +64,7 @@
 }
 
 .price{
-    scale:1.08;
+    font-size:16px;
     font-family: 'Nunito Sans';
     font-weight:800;
 }
@@ -95,6 +94,9 @@
     }
     .ticket:hover,.ticket:active{
         scale:0.9;
+        .reg-btn,.price{
+            scale:1.1;
+        }
     }
 }
 
@@ -113,7 +115,10 @@
     }
 
     .ticket:hover,.ticket:active{
-        scale:1.1;
+        scale:0.9;
+        .reg-btn{
+            scale:1.1;
+        }
     }
 
 }
@@ -130,28 +135,17 @@
     }
 
     .ticket:hover,.ticket:active{
-        scale:1.2;
+        scale:0.9;
+        .reg-btn,.price{
+            scale:1.1;
+        
         transition: scale 0.5s ease-in-out,transform 0.5s ease-in;
         transform:translateY(7px);
+        }
     }
    
 }
 
-@media (min-width:1023px) and (max-width:1220px){
-    .t3{
-        width:25%;
-        padding:0;
-    }
-
-    .t3 h2{
-        font-size:1.2rem;
-    }
-
-    .t3 .reg-btn{
-        margin-top:1.2px;
-    }
-    
-}
 @media(min-width:1440px){
     .cards{
         padding:2rem;
@@ -162,7 +156,10 @@
     }
 
     .ticket:hover,.ticket:active{
-        scale:1.5;
+        scale:1.1;
+        .reg-btn,.price{
+            scale:1.2;
+        }
         transition: scale 0.5s ease-in-out,transform 0.5s ease-in;
         transform:translateY(7px);
     }

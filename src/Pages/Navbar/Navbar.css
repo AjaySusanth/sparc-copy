@@ -57,6 +57,10 @@ nav a.active::after{
   color: white;
 }
 
+nav img{
+  background-color: transparent;
+}
+
 .menu-btn {
   display: none;
 }
@@ -104,17 +108,17 @@ nav a.active::after{
 }
 
 .Sign-Up-btn{
-  background-color: white;
-  color:rgba(92, 123, 244, 1);
+  background-color: rgba(92, 123, 244, 1);
+  color: white;
   font-weight:700;
 }
 
 .Sign-Up-btn:hover,.Sign-Up-btn:active,.Sign-Up-btn::after{
-  background-color: rgba(92, 123, 244, 1);
+  background-color: #2644b9;
   color:white;
   border-radius: 500px;
-  transition: all 0.3s ease-in;
   font-weight:600;
+  transition:all 0.3s ease-in;
 }
 
 @media (max-width: 768px) {
@@ -205,11 +209,11 @@ nav a.active::after{
   }
 
   .Sign-Up-btn{
-    scale:1.2;
+    scale:1.1;
   }
 
   #logo{
-    scale:1.2;
+    scale:1.12;
   }
 }
 
